@@ -1,0 +1,1078 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.div_footer{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}
+/*css trang chủ*/
+#div-top{
+	padding-left: 60px;
+	padding-bottom: 20px;
+	padding-right: 50px;
+}
+#hello-span{
+	color: #555555;
+	font-family: monospace;
+	font-size: 15px;
+	margin-top: 28px;
+}
+#login-top{
+	color: #555555;
+	font-size: 20px;
+	margin-left: 15px;
+}
+#logout{
+	color: #555555;
+	font-size: 15px;
+}
+#account-name{
+	text-transform: capitalize;
+	color: #555555;
+	font-size: 20px;
+	margin-left: 15px;
+	font-weight: 500;
+}
+.padding-sly{
+	padding-top: 30px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	text-align: center;
+}
+.site-title{
+	font-size: 80px;
+	font-family: BeyondTheMountains;
+}
+@font-face {
+	font-family: BeyondTheMountains;
+	src: url("./fonts/beyond_the_mountains.ttf");
+
+}
+.site-title a{
+	color: black;
+	text-decoration: none;
+}
+.site-tiny{
+	font-size: 10px;
+	margin-top: -10px;
+	margin-left: 170px;
+	color: #9d9d9d;
+}
+#nav-sticky{
+	background-color: white;
+	border-bottom: 0.8px solid #55555538;
+	z-index: 1;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.nav-item a{
+	color: #7d7d7d;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 1px 3px 12px -5px rgba(0,0,0,0.2);
+}
+.new-arrivals{
+	background: url("./image/background1.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height:570px;
+}
+.new-arrivals1{
+	background: url("./image/background10.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height:570px;
+}
+.new-arrivals2{
+	background: url("./image/background8.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height:570px;
+}
+.new-arrivals3{
+	background: url("./image/background2.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height:570px;
+}
+.box-slide{
+	width: 100%;
+	height: auto;
+}
+
+#new-arrivals-text{
+	text-align: center;
+	padding-top: 100px;
+}
+#new-arrivals-text span{
+	color: white;
+	font-size:80px ;
+	font-weight: 500;
+	font-family: serif;
+}
+#new-arrivals-box{
+	padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid #ffffffe3;
+    background-color: #0000001f;
+    border-radius: 10px;
+}
+
+.m-l-r-auto{
+	margin-left: auto;
+	margin-right: auto;
+}
+#product-list{
+	margin-top: 80px;
+	margin-bottom: 30px;
+	padding-right: 60px;
+	padding-left: 60px;
+	text-align: center;
+}
+.m-t-b{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.pos-relative{
+	position: relative;
+}
+.w-size{
+	width: 179px;
+	height: 46px;
+	padding-top: 9px;
+}
+.block-btn{
+	position: absolute;
+	left: 27%;
+	top: 4px;
+	-webkit-transform: translateX(-50%);
+	text-align: left;
+}
+.block-btn a{
+	font-size: 18px;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+}
+.align-item{
+	font-size: 17px;
+	align-items: center;
+}
+.boder{
+	border-bottom: 1px solid #edf0f5;
+}
+#info{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+.icon-info{
+	height: 50px;
+	width: 50px;
+}
+.f-40{
+	font-size: 40px;
+	font-weight: bold;
+}
+#product{
+	text-align: center;
+	padding-bottom: 50px;
+	padding-top: 20px;
+}
+.image-product-home{
+	height: 360px;
+	width: 270px;
+	padding-bottom: 20px;
+}
+.info-product-home{
+	text-align: left;
+	padding-top: 40px;
+}
+.text-product-home{
+	color: #555555;
+	font-size: 18px;
+}
+
+.info-bottom{
+	background-color: #f0f0f0;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 70px;
+	padding-bottom: 30px;
+}
+.font-info-bottom{
+	font-size: 16px;
+	color: #555555;
+	line-height: 1.8;
+}
+.font-bold-bottom{
+	font-weight: bold;
+	font-size: 22px;
+}
+.p-b-li{
+	padding-bottom: 9px;
+}
+.p-b-li a{
+	text-decoration: none;
+}
+.p-l-r-bt{
+	padding-left: 80px;
+	padding-right: 60px;
+	padding-top: 80px;
+}
+.icon-logo{
+	height: 20px;
+	width: 20px;
+}
+.p-r-logo{
+	padding-right: 15px;
+}
+.p-t-logo{
+	padding-top: 22px;
+}
+.p-t-logo a{
+	text-decoration: none;
+}
+ul,li{
+	list-style-type: none;
+	padding-left: 0px;
+}
+#featured-photos{
+	text-align: center;
+	padding: 30px;
+}
+#featured-photos-list{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.featured-photos-object{
+	width: 100%;
+	height: 100%;
+}
+.p-l-r-5{
+	padding: 5px;
+}
+/*end css trang chủ*/
+
+/*css collection.php*/
+#div-top-shop{
+	padding-left: 60px;
+	padding-top: 6px;
+	padding-right: 50px;
+}
+.site-title-shop{
+	font-size: 40px;
+	font-family: BeyondTheMountains;
+	padding-top: 15px;
+}
+.site-title-shop a{
+	color: black;
+	text-decoration: none;
+}
+.new-arrivals-shop{
+	/*background-image: url("./image/h");*/
+	height:239px;
+}
+#new-arrivals-text-shop{
+	text-align: center;
+	padding-top: 30px;
+}
+#new-arrivals-text-shop span{
+	color: white;
+}
+#list-shop{
+	padding-left: 27%;
+}
+.login-text-shop{
+	padding-top: 15px;
+	padding-right: 30px;
+}
+.login-text-shop a{
+	color: black;
+	text-decoration: none;
+	color: #7d7d7d;
+}
+.p-t-b-5{
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+}
+#form-right-shop{
+	padding-top: 40px;
+}
+.text-bold-shop{
+	font-weight: bold;
+	font-size: 20px;
+}
+.image-box-background{
+	width: 380px;
+	float: left;
+}
+.image-background{
+	width: 100%;
+	height: auto;
+}
+#search{
+	padding-left: 30px;
+	padding-bottom: 25px;
+	padding-right: 10px;
+}
+#search input[type=text]{
+	max-width: 97%;
+	border: solid 1px #dbdbdb;
+	border-radius: 2px;
+}
+#btn-search{
+	cursor: pointer;
+}
+.image-search{
+	height: 25px;
+	width: auto;
+}
+.image-background-form{
+	max-height: 226px;
+	overflow: hidden;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-bottom: 10px;
+}
+.image-li{
+	width: 380px;
+}
+.box-list{
+	padding-right: 30px;
+}
+
+.image-header ul li{
+	display: inline;
+}
+.image-header{
+	padding-bottom: 15px;
+}
+.image-header a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #555555;
+
+}
+.p-l-r-bst{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.grid {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    list-style: none;
+    text-align: center;
+}
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    max-height: 244px;
+    width: 100%;
+    background: #696969;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+    border-radius: 4px;
+}
+.grid figure figcaption {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    	font-size: 25px;
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-size: 25px;
+    font-weight: 400;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+figure.effect-marley figcaption {
+    text-align: left
+}
+
+figure.effect-marley h2,
+figure.effect-marley p {
+    position: absolute;
+    right: 30px;
+    left: 30px;
+    padding: 10px 0;
+}
+
+
+figure.effect-marley p {
+    bottom: 30px;
+    line-height: 1.5;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+}
+
+figure.effect-marley h2 {
+    top: 0px;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+}
+
+figure.effect-marley:hover h2 {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect-marley h2::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    content: '';
+    -webkit-transform: translate3d(0,40px,0);
+    transform: translate3d(0,40px,0);
+}
+
+figure.effect-marley h2::after,
+figure.effect-marley p {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-marley:hover h2::after,
+figure.effect-marley:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+/*end css collection.php*/
+/*css image.php*/
+#image-form{
+	padding-top: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 40px;
+}
+.p-r-30{
+	padding-right: 30px;
+}
+.picture-info{
+	width: 100%;
+	height: auto;
+}
+.div-picture-related-info{
+	max-width: 221px;
+	overflow: hidden;
+	max-height: 125px;
+}
+.picture-related-info{
+	width: 100%;
+	height: auto;
+}
+.image-info-header-text{
+	font-size: 25px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	font-weight: 500;
+}
+.image-info-text{
+	font-size: 15px;
+	padding-bottom: 30px;
+}
+.image-related-text{
+	font-size: 25px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-weight: 500;
+}
+.image-related{
+	padding-right: 15px;
+	padding-top: 30px;
+}
+.pd-l-r-15{
+	padding-left: 15px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+}
+.image-sponsored-text{
+	font-size: 25px;
+	padding-bottom: 20px;
+	font-weight: 500;
+}
+.fw-image-info-text{
+	font-weight: 500;
+	font-size: 16px;
+}
+#comment-form{
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+.avatar-comment{
+	width: auto;
+	height: 100%;
+}
+.comment-image{
+	padding: 0px;
+	height: 60px;
+	max-width: 60px !important;
+	overflow: hidden;
+	border-radius: 100%;
+}
+.comment-text{
+	width: 100%;
+	display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    vertical-align: middle;
+	box-sizing: border-box;
+    height: 80px;
+    padding-right: 12px;
+	padding-left: 12px;
+	border-radius: 7px;
+}
+#btn-comment{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.comment-all{
+	border-top: 0.8px solid #55555538;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.span-username-comment{
+	text-transform: capitalize;
+	color: #5656ad;
+}
+#avatar-poster{
+	padding-left: 15px;
+	padding-bottom: 15px;
+}
+.username-comment a{
+	text-decoration: none;
+}
+.name-poster-image a{
+	text-decoration: none;
+	text-transform: capitalize;
+}
+/*end css image.php*/
+
+/*css about.php*/
+#about-form{
+	padding : 30px;
+}
+.about-sly{
+	padding-left: 30px;
+}
+.about-sly h3{
+	padding-bottom: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #4a4a4a;
+}
+.about-sly p{
+	font-size: 15px;
+	color: #4f4f4f;
+	cursor: pointer;
+}
+.about-sly-content h3{
+	padding-bottom: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #4a4a4a;
+}
+.about-sly-content h4{
+	font-size: 16px;
+	font-weight: bold;
+	color: #4a4a4a;
+	padding-bottom: 5px;
+}
+.about-sly-content p{
+	font-size: 15px;
+	color: #4f4f4f;
+	padding-bottom: 30px;
+}
+/*end css about.php*/
+/*css login.php*/
+.fb-login{
+	background-color: #4c66a4;
+	width: 100%;
+	height: 46px;
+	border-radius: 4px;
+	border: 1px transparent;
+	margin-bottom: 25px;
+}
+#txtUsername, #txtPassword{
+	width: 100%;
+	margin-bottom: 20px;
+}
+#fb_p{
+	color: white;
+	padding-top: 10px;
+}
+#login_p{
+	color:white;
+	padding-top:10px;
+	margin-top: 15px;
+}
+#btnLogin{
+	background-color:#111111;
+	width: 100%;
+	height: 46px;
+	border-radius: 4px;
+	border: 1px transparent;
+	cursor: pointer;
+}
+
+.fb:hover{
+	background-color: #344a7d;
+}
+.btnLogin:hover{
+	background-color: black;
+}
+.padding{
+	padding-top: 60px;
+}
+#para{
+	color:#555555;
+	font-size:18px;
+}
+#error{
+	color: red;
+	font-size: 20px;
+}
+/*end css login.php*/
+/*css sigin.php*/
+#errorSignin{
+	color: red;
+	font-size: 20px;
+}
+#txtEmail, #txtPasswordLogin,#txtUsernameLogin, #txtConfirmPassword{
+	width: 100%;
+	margin-bottom: 20px;
+}
+#btnSignin{
+	background-color:#111111;
+	width: 100%;
+	height: 46px;
+	border-radius: 4px;
+	border: 1px transparent;
+	cursor: pointer;
+}
+#signin-p-82{
+	padding-left: 82px;
+	padding-right: 82px;
+	padding-top: 25px;
+	padding-bottom: 20px;
+}
+#signin-background{
+	background-image: url('./image/background_signin.jpg');
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #111111;
+	height: 104%;
+}
+#boc{
+	padding: 0;
+	z-index: 2;
+}
+#boc-p1{
+	font-size: 50px;
+    padding-top: 61px;
+    padding-right: 200px;
+	font-style: oblique;
+	text-align: left;
+	color: white;
+}
+#boc-p2{
+	text-align: left;
+    padding-top: 80px;
+    font-size: 33px;
+	color: white;
+}
+/*end css sigin.php*/
+/*css accounts.php*/
+#acc-top{
+	margin-bottom: 20px;
+	padding: 0 0 8px;
+	border-bottom: 1px solid #ddd;
+	font-size: 23px;
+}
+.tab-menu a {
+	font-size: 19px;
+    display: inline-block;
+    padding: 10px 0;
+    margin: 10px 15px;
+    cursor: pointer;
+    color: #71767a;
+    border-bottom: 2px solid transparent;
+    line-height: 24px;
+    text-decoration: none;
+}
+.p-l-r-50{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	padding-top: 20px;
+}
+.bocboc{
+	font-size: 18px;
+	margin-top: 23px;
+}
+.bocboc label{
+	text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+	width: 158px;
+	margin-right: 0px;
+	width: 188px;
+	padding-right: 17px;
+}
+.bocboc input[type=text]{
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    vertical-align: middle;
+	box-sizing: border-box;
+	width: 393px;
+    height: 37px;
+    padding-right: 12px;
+	padding-left: 12px;
+	border-radius: 7px;
+}
+.bocboc textarea{
+    height: 37px;
+	width: 395px;
+	resize: none;
+	padding-left: 10px;
+	border-radius: 7px;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 3px #ddd;
+}
+.bocboc select{
+	border-radius: 7px;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 3px #ddd;
+}
+#thongtin{
+	height: 75px;
+}
+#giaotiep label{
+	overflow: hidden;
+	text-align: left;
+    width: 443px;
+	padding: 1px;
+}
+#thongbao label{
+	overflow: hidden;
+	text-align: left;
+    width: 549px;
+	padding: 1px;
+}
+#luu{
+	cursor: pointer;
+	text-align: center;
+	border-radius: 6px;
+    border: 1px transparent;
+    font-size: 21px;  
+    color: white;
+    height: 38px;
+    width: 201px;
+    background-color: #19dc19e3;
+    text-align: center;
+    margin-left: 574.156px;
+}
+.image-avatar{
+	width: auto;
+    height: 386px;
+}
+.avatar-image{
+	max-height: 386px;
+    overflow: hidden;
+    margin-left: 27%;
+    margin-right: 30px;
+    max-width: 386px;
+    border-radius: 100%;
+}
+#upload-avatar{
+	cursor: pointer;
+}
+/*end css account.php*/
+/*css verify.php*/
+#content-verify{
+	text-align: center;
+	font-size: 50px;
+	padding-top: 50px;
+}
+/*end css verify.php*/
+/*css photoapproval.php*/
+.image-approval{
+	width: 100%;
+	height: 100%;
+}
+.Photo-approval{
+	padding-bottom: 40px;
+}
+.Photo-approval button{
+	background-color: #546bf1;
+	border: none;
+	font-size: 20px;
+	margin-right: 2px;
+	border-radius: 3px;
+	color: white;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+#btn-click-approval{
+	background-color: #6e6f76;
+}
+#list-photo-approval{
+	padding-top: 10px;
+	padding-bottom: 30px;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+.span-approval{
+	font-size: 20px;
+}
+/* end css photoapproval.php*/
+/*css upload.php*/
+#upload-form{
+	margin-bottom: 50px;
+}
+.form-upload{
+	margin-bottom: 10px;
+}
+.form-upload input[type=text]{
+	display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    vertical-align: middle;
+	box-sizing: border-box;
+	width: 393px;
+    height: 80px;
+    padding-right: 12px;
+	padding-left: 12px;
+	border-radius: 7px;
+}
+.form-upload textarea{
+	margin-top: 5px;
+	display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    vertical-align: middle;
+	box-sizing: border-box;
+	width: 393px;
+    height: 80px;
+    padding-right: 12px;
+	padding-left: 12px;
+	border-radius: 7px;
+}
+
+.form-upload select{
+	border-radius: 7px;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 3px #ddd;
+}
+.image-upload-form{
+	height: 300px;
+	width: auto;
+}
+/*end css upload.php*/
+/*css mypicture.php*/
+#mypicture-form{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	padding-top: 10px;
+}
+#my-image-null{
+	padding-left: 80px;
+	padding-right: 80px;
+}
+.featured-photos-object-mypicture{
+	width: 100%;
+	height: auto;
+}
+.image-background-form-mypicture{
+	max-height: 194px;
+	overflow: hidden;
+}
+/*end css mypicture.php*/
+/*css froum.php*/
+#froum-all{
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #fafafa;
+}
+.froum-content{
+	border-radius: 3px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 30px;
+}
+.avatar-froum-div{
+	max-height: 60px;
+	max-width: 60px;
+	overflow: hidden;
+	border-radius: 100%;
+}
+.avatar-froum{
+	height: 60px;
+	width: auto;
+
+}
+.image-froum{
+	width: 100%;
+	height: auto;
+}
+.header-avatar-froum{
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.header-avatar-froum a{
+	color: black;
+	text-decoration: none;
+}
+.icon-like button{
+	max-height: 40px;
+	max-width: 40px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+.icon-like img{
+	width: 100%;
+	height: auto;
+}
+.icon-like{
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.describe-image{
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+#top-like{
+	border-radius: 3px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.title-toplike{
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-bottom: 20px;
+}
+.title-toplike span{
+	font-weight: 500;
+}
+.image-top-like{
+	max-width: 115px;
+	max-height: auto;
+}
+.image-top-like-all{
+	padding-left: 15px;
+	padding-bottom: 15px;
+}
+/*end css froum.php*/
+/*css others.pph*/
+#block{
+	cursor: pointer;
+	text-align: center;
+	border-radius: 6px;
+    border: 1px transparent;
+    font-size: 21px;  
+    color: white;
+    height: 38px;
+    width: 201px;
+    background-color: #19dc19e3;
+    text-align: center;
+    margin-left: 574.156px;
+}
+/*end css others.php*/
+@media(min-width: 992px){
+  .col-lg-4{
+    max-width:33.333333%;
+  }
+}
+@media(min-width: 768px){
+  .col-md-12{
+    max-width:66.666667%;
+    height : 100%
+  }
+}
+@media(min-width: 768px){
+    .col-md-6{
+      max-width:50%;
+      height: 100%
+    }
+}
+@media(min-width: 576px){
+    .col-sm-12{
+      max-width:83.333333%;
+      height: 100%
+    }
+}
