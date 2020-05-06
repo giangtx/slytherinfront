@@ -1076,3 +1076,35 @@ figure.effect-marley:hover p {
       height: 100%
     }
 }
+/*css loading...*/
+.content {
+    padding-top: 40px;
+    overflow: hidden;
+}
+.load-wrapp {
+    margin-left: 44%;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.load-wrapp:last-child {margin-right: 0;}
+.bar {
+    float: left;
+    width: 15px;
+    height: 6px;
+    border-radius: 2px;
+    background-color: #4b9cdb;
+}
+.l-10 {animation-delay: 1.56s;}
+.load-10 .bar {animation: loadingJ 2s cubic-bezier(.17,.37,.43,.67) infinite;}
+@keyframes loadingJ {
+	0%,100% {transform: translate(0,0);}
+	
+	50% {
+		transform: translate(160px,0);
+		background-color: #f5634a;
+		width: 25px;
+	}
+  }
+/*end css loading...*/

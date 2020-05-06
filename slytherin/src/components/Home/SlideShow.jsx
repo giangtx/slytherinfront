@@ -1,15 +1,15 @@
-import React, {Component} from 'react'
+import React from 'react'
 
 class SlideShow extends React.Component{
-    constructor(props){
-        super(props)
-    }
+    // constructor(props){
+    //     super(props)
+    // }
     render(){
         return(
             <div className="container-fluid" style={{paddingRight:'0px',paddingLeft:'0px'}}>
                 <div id="demo" className="carousel slide" data-ride="carousel">
                     <ul className="carousel-indicators">
-                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="0" className="active"></li>
                         <li data-target="#demo" data-slide-to="1"></li>
                         <li data-target="#demo" data-slide-to="2"></li>
                         <li data-target="#demo" data-slide-to="3"></li>

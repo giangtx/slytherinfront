@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import HeaderCom from './Home/HeaderCom'
 import FooterCom from './Layout/FooterCom';
 import SlideShow from './Home/SlideShow';

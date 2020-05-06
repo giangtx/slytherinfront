@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import FooterCom from './FooterCom'
 import HeaderChild from './HeaderChild';
 class Layout extends React.Component{

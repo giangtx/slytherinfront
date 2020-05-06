@@ -1,13 +1,76 @@
-import React, {Component} from 'react'
-import HeaderMenu from '../Layout/HeaderMenu'
+import React from 'react'
+import HeaderMenu from '../Layout/HeaderMenu';
+import { withRouter } from 'react-router-dom';
 class HeaderCom extends React.Component{
     constructor(props){
-        super(props)
+        super(props);
+        this.state={
+            isLoading:true,
+            userInfo:{}
+        }
     }
+    componentDidMount(){
+        this.setState({
+            isLoading:true
+        })
+        const token = localStorage.getItem('token');
+        if (token !== null) {
+            fetch('/api/v1/auth/info',{
+                method: 'get',
+                headers: {
+                    Accept: 'Application/json',
+                    "Content-type": "Application/json",
+                    Authorization: "Bearer " + token
+                }
+            })
+            .then(response => response.json())
+            .then(data => this.setState({
+                isLoading:false,
+                userInfo:data
+            }))
+        }else{
+            console.log("no token")
+        }
+    }
+      
+    logoutHandle =() => {
+        try {
+            localStorage.removeItem('token');
+            this.props.history.push('/')
+          } catch (e) {
+            console.log(e.message)
+            console.log('lỗi tiếp')
+          }
+    }
+
     render(){
+        const {isLoading,userInfo}=this.state;
+        var userHeader="";
+        if(isLoading){
+            userHeader=<div className="content" >
+                            <div className="load-wrapp"align="center">
+                                <div className="load-10">
+                                    <div className="bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                            
+            
+        }  
+        if (userInfo.errorCode==1) {
+            userHeader=
+                            <div className="col-md-4" style={{paddingLeft: '0px'}}>
+                                <a href='/Slytherin/hoso' id="account-name">{userInfo.data.tendangnhap}</a>
+                                <span onClick={this.logoutHandle} style={{cursor: "pointer"}}>/Đăng xuất</span>
+                            </div>
+        }else{
+            userHeader=<div className="col-md-4" style={{paddingLeft: '0px'}}>
+                                <a href='/slytherin/dangnhap' id='login-top'>Đăng nhập</a> 
+                            </div>
+        }
         return(
             <div>
-                <div class="container-fluid" id="div-top">
+                <div className="container-fluid" id="div-top">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6" id="hello-span">
                             <span >Chào mừng các bạn đến với website</span>
@@ -17,7 +80,7 @@ class HeaderCom extends React.Component{
                                 <div className="row">
                                     <div className="col-lg-8" style={{paddingRight : '0px'}}>
                                         <div id="search">
-                                            <div class="row">
+                                            <div className="row">
                                                 <div className="col-lg-11 col-md-11 col-sm-11" style={{padding: '0px'}}>
                                                     <input type="text" name="txtSearch" id="txtSearch"/>
                                                 </div>
@@ -27,9 +90,7 @@ class HeaderCom extends React.Component{
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-4" style={{paddingLeft: '0px'}}>
-                                        <a href='dangnhap' id='login-top'>Đăng nhập</a> 
-                                    </div>
+                                    {userHeader}
                                 </div>
                             </div>
                         </div>
@@ -52,4 +113,4 @@ class HeaderCom extends React.Component{
         );
     }
 }
-export default HeaderCom;
+export default withRouter(HeaderCom);
