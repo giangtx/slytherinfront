@@ -8,6 +8,8 @@ import Collection from './components/Collection';
 import Login from './components/Login';
 import Signin from './components/Signin';
 import Forum from './components/Forum';
+import Chat from './components/Chat';
+import Relax from './components/Relax/Relax';
 function App() {
   return (
       <Router>
@@ -16,6 +18,8 @@ function App() {
               <Route exact={true} path="/slytherin" component={Home}></Route>
               <Route path="/slytherin/dangnhap" ><Login></Login></Route>
               <Route path="/slytherin/dangky" ><Signin></Signin></Route>
+              <Route path="/slytherin/chat/:chatId" component={Chat}></Route>
+              <Route path="/slytherin/relax" component={Relax}></Route>
               <Layout>
                   <Route path="/slytherin/hinhanh" >
                       <Route exact path="/slytherin/hinhanh/:imageId" component={Image}></Route>
@@ -27,7 +31,6 @@ function App() {
                   <Route exact path="/slytherin/diendan" component={Forum}></Route>
                   <Route path="/slytherin/hinhanhtest" ><p>fishs are friend</p></Route>
               </Layout>
-              
           </Switch>
       </Router>
   );

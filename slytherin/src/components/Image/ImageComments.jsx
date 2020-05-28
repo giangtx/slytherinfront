@@ -7,10 +7,30 @@ class ImageComments extends React.Component{
         this.state={
             comments:[],
             isLoading:true,
-            txtComment:''
+            txtComment:'',
+            user:{
+                username:'',
+                avatar:'',
+                id:''
+            },
         }
     }
     componentDidMount(){
+        const token = localStorage.getItem('token');
+        if (token !== null) {
+            const payload = JSON.parse(atob(token.split('.')[1]));
+            if (payload) {   
+                this.setState({
+                    user:{
+                        username:payload['userName'],
+                        avatar:payload['avatar'],
+                        id:payload['userId']
+                    }
+                })
+            }
+        }else{
+            console.log("no token")
+        }
         this.setState({isLoandding:true});
         fetch('/api/v1/public/hinhanh/binhluan/'+this.props.imageId)
         .then(response => response.json())
@@ -54,7 +74,6 @@ class ImageComments extends React.Component{
     
     render(){
         const {comments,isLoading}=this.state;
-        var avatar='user.png'
         if(isLoading){
             return(
                 <div className="content" >
@@ -93,7 +112,7 @@ class ImageComments extends React.Component{
             <div id="comment-form">
                 <div className="row" style={{paddingLeft:'0px'}}>
                     <div className="col-lg-1 col-md-1 comment-image">
-                        <img className="avatar-comment" src={'/image/avatarresize/'+avatar} alt=""/>
+                        <img className="avatar-comment" src={'/image/avatarresize/'+this.state.user.avatar} alt=""/>
                     </div>
                     <div className="col-lg-11 col-md-11 ">
                         <textarea id="txtComment" className="comment-text" name="txtComment" value= {this.state.txtComment} onChange={this.handleChange} placeholder="Thêm bình luận của bạn"></textarea>

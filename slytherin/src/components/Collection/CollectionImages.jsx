@@ -19,7 +19,7 @@ class CollectionImages extends React.Component{
                 </div>   
             );
         }
-        const list=images.data.map((image,index) => {
+        const list=images.data.listhinhanh.map((image,index) => {
             if(images.errorCode===1){
                 return(
                     <div className="col-lg-4 col-md-6 col-sm-12" key={index} style={{padding:'0px'}}>

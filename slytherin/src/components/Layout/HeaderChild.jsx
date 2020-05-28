@@ -6,7 +6,11 @@ class HeaderChild extends React.Component{
         super(props);
         this.state={
             isLoading:true,
-            userInfo:{}
+            userInfo:{
+                username:'',
+                avatar:'',
+                id:''
+            }
         }
     }
     componentDidMount(){
@@ -15,19 +19,18 @@ class HeaderChild extends React.Component{
         })
         const token = localStorage.getItem('token');
         if (token !== null) {
-            fetch('/api/v1/auth/info',{
-                method: 'get',
-                headers: {
-                    Accept: 'Application/json',
-                    "Content-type": "Application/json",
-                    Authorization: "Bearer " + token
-                }
-            })
-            .then(response => response.json())
-            .then(data => this.setState({
-                isLoading:false,
-                userInfo:data
-            }))
+            const payload = JSON.parse(atob(token.split('.')[1]));
+            if (payload) {   
+                this.setState({
+                    isLoading:false,
+                    userInfo:{
+                        username:payload['userName'],
+                        avatar:payload['avatar'],
+                        id:payload['userId']
+                    }
+                })
+                console.log(payload['userName'])
+            }
         }else{
             console.log("no token")
         }
@@ -55,9 +58,9 @@ class HeaderChild extends React.Component{
                             
             
         }  
-        if (userInfo.errorCode==1) {
+        if (userInfo.username!='') {
             userHeader = <div className="col-md-4" style={{paddingLeft: '0px',paddingRight:'0px'}}>
-                            <a href='/Slytherin/hoso' id="account-name" style={{marginLeft:"0px"}}>{userInfo.data.tendangnhap}</a>
+                            <a href='/Slytherin/hoso' id="account-name" style={{marginLeft:"0px"}}>{userInfo.username}</a>
                             <span onClick={this.logoutHandle} style={{cursor: "pointer"}}>/Đăng xuất</span>
                         </div>
         }else{

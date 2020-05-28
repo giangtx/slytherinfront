@@ -17,6 +17,9 @@ code {
     background-color: blue;
     color: white;
 }
+input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}
 /*css trang chủ*/
 #div-top{
 	padding-left: 60px;
@@ -576,6 +579,9 @@ figure.effect-marley:hover p {
 	max-width: 60px !important;
 	overflow: hidden;
 	border-radius: 100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
 }
 .comment-text{
 	width: 100%;
@@ -1038,7 +1044,136 @@ figure.effect-marley:hover p {
 	padding-bottom: 15px;
 }
 /*end css froum.php*/
+/*css chat*/
+
+#chat_room{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#chat_room label{
+	margin: 0px;
+}
+.chat_leftside{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-right: 0.8px solid #55555538;
+}
+.avatar-chat-div{
+	max-height: 50px;
+	max-width: 50px;
+	overflow: hidden;
+	border-radius: 100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.avatar-chat{
+	height: 50px;
+	width: auto;
+}
+.label_search_chatbox{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	width: 100%;
+}
+.search_chatbox{
+	width: 100%;
+	height: 30px;
+	font-size: 15px;
+	border-radius: 50px;
+	border: solid 1px #dbdbdb;
+	padding-left: 20px;
+	background-color: #f6f6f6;
+}
+.chatbox{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 15px;
+}
+.chatbox p{
+	margin: 0px;
+}
+.chatbox-active{
+	background-color: #c6ccd52b;
+}
+.chatbox-a{
+	margin-right: 5px;
+}
+.chatbox-a a{
+	color: black;
+	text-decoration: none;
+}
+
+.chatbox_p{
+	padding-top: 5px;
+}
+.message_box{
+	padding-top: 20px;
+}
+.message_title{
+	padding-bottom: 10px;
+	border-bottom: 0.8px solid #55555538;
+}
+.title-message-box{
+	text-transform: capitalize;
+	font-size: 20px;
+	font-weight: 500;
+}
+.avatar-message-chat-div{
+	max-height: 30px;
+	max-width: 30px;
+	overflow: hidden;
+	border-radius: 100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.avatar-message-chat{
+	height: 30px;
+	width: auto;
+}
+.message_content{
+	height: 620px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-left: 15px;
+}
+
+
+
+.message{
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.message_detail{
+	max-width: 450px;
+	border-radius: 18px;
+	color: white;
+	width: fit-content;
+	line-height: 18px;
+}
+.message_detail_friend{
+	background-color: #e3e3e3;
+	color: black;
+}
+.message_detail_user{
+	background-color: #0084ff;
+}
+.message-div{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 7px;
+}
+.icon-send{
+	height: 25px;
+	width: auto;
+	cursor: pointer;
+}
+/*end css chat*/
 /*css others.pph*/
+
 #block{
 	cursor: pointer;
 	text-align: center;
@@ -1076,6 +1211,24 @@ figure.effect-marley:hover p {
       height: 100%
     }
 }
+/*css scroll*/
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(223, 219, 219, 0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 4px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #dfdfdf;
+}
+/*end css scroll*/
 /*css loading...*/
 .content {
     padding-top: 40px;
